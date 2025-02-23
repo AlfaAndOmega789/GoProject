@@ -47,5 +47,30 @@ func main() {
 	//lesson_5.Tasks()
 
 	//lesson_6.Lesson_6()
-	lesson_6.Task_1()
+	//lesson_6.Task_1()
+
+	//num := 10
+	//lesson_6.Task_2(&num)
+	//fmt.Println(num)
+
+	//lesson_6.Task_3()
+	//lesson_6.Task_4()
+
+	//s := "Hello world!"
+	//lesson_6.Task_5(&s)
+
+	//p := lesson_6.Person{26, "Ivan"}
+	//lesson_6.Task_6(&p)
+
+	//arr := [5]int{1, 2, 3, 4, 5}
+	//lesson_6.Task_7(&arr)
+
+	//myMap := make(map[string]int)
+	//lesson_6.Task_8(myMap)
+
+	r := lesson_6.Rectangle{12.5, 13.7}
+	value := 2.3
+
+	lesson_6.Scale(&r, &value)
+
 }
