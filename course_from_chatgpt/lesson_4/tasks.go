@@ -3,6 +3,7 @@ package lesson_4
 import (
 	"bufio"
 	"fmt"
+	"maps"
 	"os"
 	"strings"
 )
@@ -206,5 +207,15 @@ func Task_12() {
 // Создай две map, содержащие названия товаров и их цены.
 // Объедини их в одну map (если товар встречается в обоих map, оставь цену из второй).
 func Task_11() {
+	myMap1 := make(map[string]int)
+	myMap2 := make(map[string]int)
 
+	myMap1["Книга"] = 11
+	myMap1["Журнал"] = 4
+
+	myMap2["Газета"] = 2
+	myMap2["Журнал"] = 5
+
+	maps.Copy(myMap1, myMap2)
+	fmt.Println("myMap1:", myMap1)
 }
