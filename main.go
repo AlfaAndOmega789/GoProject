@@ -1,6 +1,6 @@
 package main
 
-import "awesomeProject/course_from_chatgpt/lesson_6"
+import "awesomeProject/course_from_chatgpt/lesson_7"
 
 func main() {
 	//lesson_1.Lesson_1()
@@ -68,9 +68,16 @@ func main() {
 	//myMap := make(map[string]int)
 	//lesson_6.Task_8(myMap)
 
-	r := lesson_6.Rectangle{12.5, 13.7}
-	value := 2.3
+	//Task_9
+	//r := lesson_6.Rectangle{12.5, 13.7}
+	//value := 2.3
+	//lesson_6.Scale(&r, &value)
 
-	lesson_6.Scale(&r, &value)
+	//lesson_7.Lesson_7()
+	//lesson_7.Task_1()
+	//lesson_7.Task_2()
+	//lesson_7.Task_3()
+	//lesson_7.Task_4()
+	lesson_7.Task_5()
 
 }
