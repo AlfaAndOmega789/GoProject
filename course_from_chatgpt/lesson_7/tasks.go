@@ -76,4 +76,76 @@ func Task_5() {
 	NewGrade(&student, 10)
 }
 
-//Создай структуру Rectangle с методами Area() и Perimeter()
+// Создай структуру Rectangle с методами Area() и Perimeter()
+type Rectangle struct {
+	Wight  float64
+	Height float64
+}
+
+func (r *Rectangle) Area() float64 {
+	return r.Wight * r.Height
+}
+func (r *Rectangle) Perimeter() float64 {
+	return (r.Wight + r.Height) * 2
+}
+
+func Task_6() {
+	r := Rectangle{14.5, 15.4}
+	fmt.Println(r.Area(), r.Perimeter())
+}
+
+// Создай структуру BankAccount, которая хранит Balance. Добавь метод Deposit(amount float64), который пополняет баланс.
+func Task_7() {
+	b := BankAccount{10500.100500}
+	fmt.Println(b.Withdraw(10500.100500))
+}
+
+type BankAccount struct {
+	Balance float64
+}
+
+func (b *BankAccount) Deposit(amount float64) {
+	b.Balance += amount
+}
+
+// Task_8()
+// Напиши метод Withdraw(amount float64), который снимает деньги, но не позволяет уйти в минус.
+func (b *BankAccount) Withdraw(amount float64) float64 {
+	if b.Balance-amount >= 0 {
+		b.Balance -= amount
+	}
+	return b.Balance
+}
+
+// Реализуй структуру Company, где есть поле Employees (срез структур Employee),
+// а у Employee есть Name и Salary. Добавь метод, который вычисляет среднюю зарплату сотрудников.
+func Task_9() {
+	e1 := Employee{"Ivan", 4000}
+	e2 := Employee{"Andrei", 2000}
+	c := Company{
+		Employees: []Employee{e1, e2},
+	}
+
+	fmt.Println(c.averageSalary())
+
+}
+
+type Company struct {
+	Employees []Employee
+}
+
+type Employee struct {
+	Name   string
+	Salary float64
+}
+
+func (c *Company) averageSalary() float64 {
+	var averageSalary float64
+	for i := 0; i < len(c.Employees); i++ {
+		averageSalary += c.Employees[i].Salary
+	}
+	if len(c.Employees) == 0 {
+		return 0
+	}
+	return averageSalary / float64(len(c.Employees))
+}
