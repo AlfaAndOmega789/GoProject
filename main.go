@@ -1,5 +1,9 @@
 package main
 
+import (
+	"awesomeProject/course_from_chatgpt/lesson_8"
+)
+
 func main() {
 	//lesson_1.Lesson_1()
 	//lesson_1.Task_1()
@@ -81,5 +85,11 @@ func main() {
 	//Task_8 по пути lesson_7.Tasks
 	//lesson_7.Task_7()
 	//lesson_7.Task_9()
+
+	//lesson_8.Lesson_8()
+	//Task_1 по пути lesson_8.Tasks
+	//lesson_8.Task_2()
+	//lesson_8.Task_3()
+	lesson_8.Task_4()
 
 }
