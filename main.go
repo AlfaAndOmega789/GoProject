@@ -1,8 +1,6 @@
 package main
 
-import (
-	"awesomeProject/course_from_chatgpt/lesson_8"
-)
+import "awesomeProject/course_from_chatgpt/lesson_10"
 
 func main() {
 	//lesson_1.Lesson_1()
@@ -90,6 +88,11 @@ func main() {
 	//Task_1 по пути lesson_8.Tasks
 	//lesson_8.Task_2()
 	//lesson_8.Task_3()
-	lesson_8.Task_4()
+	//lesson_8.Task_4()
+
+	//lesson_10.Lesson_10()
+	//lesson_10.Task_1()
+	//lesson_10.Task_2()
+	lesson_10.Task_3()
 
 }
