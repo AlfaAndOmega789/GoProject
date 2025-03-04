@@ -1,6 +1,9 @@
 package main
 
-import "awesomeProject/course_from_chatgpt/lesson_10"
+import (
+	"awesomeProject/practice_to_consolidate_the_material_from_the_book/chapter_5"
+	"fmt"
+)
 
 func main() {
 	//lesson_1.Lesson_1()
@@ -93,6 +96,22 @@ func main() {
 	//lesson_10.Lesson_10()
 	//lesson_10.Task_1()
 	//lesson_10.Task_2()
-	lesson_10.Task_3()
+	//lesson_10.Task_3()
 
+	//lesson_11.Lesson_11()
+
+	//chapter_5.Greet("Ivan")                                                           //task 1
+	//chapter_5.Imitate(1, 2, true)                                                     //task 2
+	//chapter_5.SumValues(1, 2, 3, 4, 5)                                                //task 3
+	//chapter_5.ReturningMultipleValues(3, 4)                                           //task 4
+	//chapter_5.NewFunction()                                                           //task 5
+	//chapter_5.RectagleAreaAndPerimetr(12.3, 23.4)                                     //task 6
+	//chapter_5.Anonymous()                                                             //task 7
+	//chapter_5.ApplyOperation(1, 2, func(i, j int) (int, int) { return i + i, j * j }) //task 8
+
+	var myFunc = chapter_5.ExternalMethod() //task 9
+	result := myFunc()
+	fmt.Println(result)
+
+	chapter_5.MakeMultiplier(10) // task 10
 }
