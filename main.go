@@ -93,6 +93,10 @@ func main() {
 	//lesson_8.Task_3()
 	//lesson_8.Task_4()
 
+	//lesson_9.Lesson_9()
+	//lesson_9.Task_1()
+	//lesson_9.Task_2()
+
 	//lesson_10.Lesson_10()
 	//lesson_10.Task_1()
 	//lesson_10.Task_2()
