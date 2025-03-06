@@ -98,7 +98,7 @@ func DeleteElementInSlice() {
 }
 
 // 8
-func removeDuplicates(s []int) []int {
+func RemoveDuplicates(s []int) []int {
 	newMap := make(map[int]int)
 	var slice []int = []int{}
 
@@ -114,7 +114,7 @@ func removeDuplicates(s []int) []int {
 }
 
 // 9
-func rotateLeft(s []int, n int) {
+func RotateLeft(s []int, n int) {
 
 	for i := 0; i < n; i++ {
 		s = OneRotateLeft(s)

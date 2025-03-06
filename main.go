@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/practice_to_consolidate_the_material_from_the_book/chapter_5"
+	"awesomeProject/practice_to_consolidate_the_material_from_the_book/chapter_3"
 	"fmt"
 )
 
@@ -104,6 +104,23 @@ func main() {
 
 	//lesson_11.Lesson_11()
 
+	chapter_3.NewSlice()      //1
+	chapter_3.Slice()         //2
+	chapter_3.MakeSlice()     //3
+	chapter_3.ElementsSlice() //4
+	chapter_3.ArrayToSlice1() //5
+	chapter_3.ArrayToSlice2()
+	chapter_3.CopySlice()            //6
+	chapter_3.DeleteElementInSlice() //7
+
+	slice := []int{1, 2, 3, 4}
+	fmt.Println(chapter_3.RemoveDuplicates(slice)) // 8
+	chapter_3.RotateLeft(slice, 2)                 //9
+
+	fmt.Println(chapter_3.Push(slice, 1)) //10
+	fmt.Println(chapter_3.Top(slice))
+	fmt.Println(chapter_3.Pop(slice))
+
 	//chapter_5.Greet("Ivan")                                                           //task 1
 	//chapter_5.Imitate(1, 2, true)                                                     //task 2
 	//chapter_5.SumValues(1, 2, 3, 4, 5)                                                //task 3
@@ -113,9 +130,9 @@ func main() {
 	//chapter_5.Anonymous()                                                             //task 7
 	//chapter_5.ApplyOperation(1, 2, func(i, j int) (int, int) { return i + i, j * j }) //task 8
 
-	var myFunc = chapter_5.ExternalMethod() //task 9
-	result := myFunc()
-	fmt.Println(result)
-
-	chapter_5.MakeMultiplier(10) // task 10
+	//var myFunc = chapter_5.ExternalMethod() //task 9
+	//result := myFunc()
+	//fmt.Println(result)
+	//
+	//chapter_5.MakeMultiplier(10) // task 10
 }
