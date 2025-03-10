@@ -142,3 +142,73 @@ func Pop(slice []int) []int {
 func Top(slice []int) int {
 	return slice[len(slice)-1]
 }
+
+// 17
+func NewStruct() {
+	type Person struct {
+		Name string
+		Age  int
+	}
+
+	p := Person{Name: "Ivan", Age: 26}
+	fmt.Println(p.Name, p.Age)
+}
+
+// 18
+func AnonymousStruct() {
+	var person struct {
+		name string
+		age  int
+	}
+
+	person.name = "Ivan"
+	person.age = 26
+
+	pet := struct {
+		name string
+		kind string
+	}{
+		name: "Fido",
+		kind: "dog",
+	}
+	fmt.Println(person, pet)
+}
+
+// 19
+func Result() {
+	type Person struct {
+		Name string
+		Age  int
+	}
+
+	p1 := Person{"Ivan", 26}
+	p2 := Person{"Ivan", 26}
+	p3 := Person{"Ivan", 27}
+
+	fmt.Println(СomparisonStruct(p1, p2))
+	fmt.Println(СomparisonStruct(p1, p3))
+}
+
+func СomparisonStruct(s1, s2 interface{}) bool {
+	return s1 == s2
+}
+
+// 20
+func DeepCopy() {
+	type Cat struct {
+		age     int
+		name    string
+		friends []string
+	}
+
+	wilson := Cat{7, "Wilson", []string{"Tom", "Tabata", "Willie"}}
+	nikita := wilson
+
+	nikita.friends = make([]string, len(wilson.friends))
+	copy(nikita.friends, wilson.friends)
+
+	nikita.friends = append(nikita.friends, "Syd")
+
+	fmt.Println(wilson)
+	fmt.Println(nikita)
+}
